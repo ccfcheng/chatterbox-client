@@ -17,11 +17,13 @@
       <h1>chatterbox</h1> 
       <form>
         Room:
-        <select id="roomSelect">
+        <select id="roomSelect" name="roomname">
+          <option selected>Select a chat room:</option>
+          <option value="bob's room">bob's room</option>
         </select>
         <br>
-        <input type="text">
-        <input type="submit">
+        <input type="text" id="textField" name="text"/>
+        <button type="button" id="submit">Submit</button>
       </form>
       <div id="chats"></div>
       <!-- Your HTML goes here! -->
